@@ -1,7 +1,8 @@
 <header>
-  <nav class="navbar"> 
+  <nav class="navbar">
     <div>
-      <img src="../assets/img/LogoMakr-white.png" alt="Logo">
+      <img *ngIf="!darkMode" src="../assets/img/LogoMakr-black.png" alt="Logo">
+      <img *ngIf="darkMode" src="../assets/img/LogoMakr-white.png" alt="Logo">
     </div>
     <div>
       <a href="#">Home</a>
@@ -11,15 +12,21 @@
   </nav>
 
   <div class="headline">
-    <div>
-      <h2>Hi, <br>
-        I'm <span class="primary">Adderlyn</span> Windsor <br>
-        Front End develop<span class="secondary">e</span>r
+    <div class="container">
+      <div>
+        <h2>Hi, <br>
+          I'm <span class="primary">Adderlyn</span> Windsor <br>
+          <div class="content">
+            <div *ngIf="showHeadline" class="typed-out">{{headlines[currentLine]}}</div>
+          </div>
         </h2>
         <button>Contact me</button>
+      </div>
+      <img class="profile-pic" src="../assets/img/Screenshot 2022-05-04 at 22.11.18.png" alt="">
     </div>
-    <img src="../assets/img/Screenshot 2022-05-04 at 22.11.18.png" alt="">
   </div>
+  <a href="skillz.component.html" class="center"><img class="arrow-down" src="../../assets/downloads/arrow-down.png"
+      alt=""></a>
 
 
 </header>

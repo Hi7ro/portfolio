@@ -1,0 +1,55 @@
+.container {
+  background-color: #131111;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  h2 {
+    border-bottom: 3px solid var(--primary);
+    color: white;
+    width: fit-content;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-size: 1.9rem;
+    transition: all 255ms;
+
+    &:hover {
+      transition: all 255ms;
+    }
+  }
+}
+
+.content {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 900px;
+
+  .skill-card {
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    width: 200px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .border {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 3rem;
+      width: 3rem;
+      position: absolute;
+      top: -20px;
+      background-color: white;
+      border-radius: 50%;
+    }
+    img {
+      height: 25px;
+    }
+  }
+}
