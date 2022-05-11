@@ -1,5 +1,5 @@
 .container {
-  background-color: #131111;
+  background-color: var(--grey);
   height: 100vh;
   display: flex;
   align-items: center;
@@ -10,7 +10,7 @@
     width: fit-content;
     padding-top: 100px;
     padding-bottom: 20px;
-    font-size: 1.9rem;
+    font-size: 2rem;
     transition: all 255ms;
 
     &:hover {

@@ -13,6 +13,7 @@ export class HeaderComponent implements OnInit {
     'Code lover',
   ];
   showHeadline = true;
+  typedOut = false; // todo: typing back function
   currentLine = 0;
 
   ngOnInit() {
@@ -24,6 +25,9 @@ export class HeaderComponent implements OnInit {
       this.currentLine++;
       this.currentLine = this.currentLine % this.headlines.length;
       this.showHeadline = false;
+      setInterval(() => {
+        this.typedOut = true;
+      }, 2000);
 
       setTimeout(() => {
         this.showHeadline = true;

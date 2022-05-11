@@ -5,9 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SkillzComponent } from './skillz/skillz.component';
+import { WorkComponent } from './work/work.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, SkillzComponent],
+  declarations: [AppComponent, HeaderComponent, SkillzComponent, WorkComponent, AboutComponent, ContactComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
