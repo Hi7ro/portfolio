@@ -8,9 +8,10 @@ import { SkillzComponent } from './skillz/skillz.component';
 import { WorkComponent } from './work/work.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, SkillzComponent, WorkComponent, AboutComponent, ContactComponent],
+  declarations: [AppComponent, HeaderComponent, SkillzComponent, WorkComponent, AboutComponent, ContactComponent, FooterComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
