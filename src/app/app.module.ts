@@ -9,9 +9,12 @@ import { WorkComponent } from './work/work.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { DataProtectionComponent } from './data-protection/data-protection.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, SkillzComponent, WorkComponent, AboutComponent, ContactComponent, FooterComponent],
+  declarations: [AppComponent, HeaderComponent, SkillzComponent, WorkComponent, AboutComponent, ContactComponent, FooterComponent, ImprintComponent, DataProtectionComponent, NavbarComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

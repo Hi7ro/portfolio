@@ -1,0 +1,32 @@
+nav {
+  background-color: black;
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .active-link {
+    color: var(--primary);
+    transition: 255ms;
+  }
+
+  img {
+    margin-left: -5px;
+    height: 54px;
+    cursor: pointer;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: 20px;
+    transition: all 255ms;
+
+    &:hover {
+      color: var(--primary);
+      transition: all 255ms;
+    }
+  }
+}

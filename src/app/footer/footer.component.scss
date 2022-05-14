@@ -1,7 +1,8 @@
 .container {
-  height: 20vh;
+  height: 15vh;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   ul {
     list-style: none;
     display: flex;
@@ -15,5 +16,10 @@
         color: var(--grey);
       }
     }
+  }
+
+  img {
+    height: 60px;
+    padding-right: 60px;
   }
 }
