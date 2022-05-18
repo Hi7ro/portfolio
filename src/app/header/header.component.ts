@@ -13,6 +13,7 @@ export class HeaderComponent implements OnInit {
     'Code lover',
   ];
   showHeadline = true;
+  showHeader = true;
   typedOut = false; // todo: typing back function
   currentLine = 0;
 

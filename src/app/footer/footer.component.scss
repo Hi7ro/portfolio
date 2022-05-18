@@ -4,22 +4,21 @@
   align-items: center;
   justify-content: space-between;
   ul {
+    padding-left: 15%;
     list-style: none;
     display: flex;
-
-    li {
-      padding-left: 10px;
-
-      a {
-        font-size: 1.2rem;
-        text-decoration: none;
-        color: var(--grey);
-      }
+    a {
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: var(--grey);
     }
   }
 
-  img {
-    height: 60px;
-    padding-right: 60px;
+  div {
+    padding-right: 15%;
+
+    img {
+      height: 60px;
+    }
   }
 }
