@@ -1,10 +1,11 @@
 .container {
   background-color: var(--grey);
-  height: 80vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
   h2 {
     border-bottom: 3px solid var(--primary);
     color: white;
@@ -25,6 +26,7 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 900px;
+  animation: fadeInAnimation 2s ease-out;
 
   .skill-card {
     background-color: white;
@@ -47,12 +49,10 @@
       top: -20px;
       background-color: white;
       border-radius: 50%;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     }
     img {
       height: 25px;
     }
   }
-}
-
-@media only screen and(max-width: 1500px) {
 }

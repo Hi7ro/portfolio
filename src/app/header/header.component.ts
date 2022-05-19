@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -26,10 +27,10 @@ export class HeaderComponent implements OnInit {
       this.currentLine++;
       this.currentLine = this.currentLine % this.headlines.length;
       this.showHeadline = false;
+
       setInterval(() => {
         this.typedOut = true;
       }, 2000);
-
       setTimeout(() => {
         this.showHeadline = true;
       }, 1);
