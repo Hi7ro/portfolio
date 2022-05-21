@@ -1,7 +1,30 @@
-h1 {
-  margin-bottom: 5px;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  color: #6b6b6b;
+  height: 65vh;
 }
 
-h2 {
-  margin-bottom: 5px;
+h1 {
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-family: "Quicksand", sans-serif;
+}
+
+p:first-of-type {
+  margin-bottom: 15px;
+}
+p {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+a {
+  font-family: "Quicksand", sans-serif;
 }
