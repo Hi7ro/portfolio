@@ -1,6 +1,7 @@
 .container {
   background-color: var(--grey);
   height: 90vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,9 +26,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 900px;
-  animation: fadeInAnimation 2s ease-out;
-
+  max-width: 750px;
   .skill-card {
     background-color: white;
     border-radius: 10px;
@@ -53,6 +52,20 @@
     }
     img {
       height: 25px;
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  .skill-card {
+    margin: 25px 5px !important;
+    width: 110px !important;
+    height: 80px !important;
+    text-align: center;
+
+    .border {
+      height: 2.5rem !important;
+      width: 2.5rem !important;
     }
   }
 }

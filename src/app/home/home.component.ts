@@ -8,10 +8,5 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   constructor() {}
 
-  ngOnInit(): void {
-    window.addEventListener('scroll', () => {
-      let newScrollSection = scrollY;
-      console.log(newScrollSection);
-    });
-  }
+  ngOnInit(): void {}
 }

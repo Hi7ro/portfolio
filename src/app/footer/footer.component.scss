@@ -1,5 +1,6 @@
 .container {
-  height: 15vh;
+  height: 10vh;
+  padding: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,11 +17,19 @@
   }
 
   div {
-    padding-left: 15%;
-    padding-right: 15%;
-
     img {
       height: 60px;
     }
   }
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  .container {
+    div {
+      padding: unset;
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
 }

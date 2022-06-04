@@ -1,7 +1,8 @@
 .container {
-  min-height: 100vh;
+  width: 100vw;
   padding: 100px 15%;
   background-color: black;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,42 +45,99 @@
     justify-content: center;
     width: 100%;
     flex-wrap: wrap;
+    position: relative;
+
+    .overlay {
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(232, 232, 232, 0.594);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: 225ms all ease-in-out;
+      h3 {
+        color: var(--primary);
+        font-size: 25px;
+        padding-bottom: 10px;
+      }
+      p {
+        font-weight: bolder;
+        font-size: 20px;
+        padding: 20px;
+      }
+
+      a {
+        color: var(--primary);
+        background-color: rgba(232, 232, 232, 0.725);
+        font-weight: bolder;
+        font-size: 20px;
+        text-decoration: none;
+        border: 2px solid var(--primary);
+        padding: 10px 30px;
+      }
+
+      &:hover {
+        transition: 225ms all ease-in;
+        opacity: 1;
+      }
+    }
   }
   .project {
-    margin: 50px;
-    width: 450px;
-    height: 400px;
-    overflow: hidden;
+    margin: 20px 10px;
+    width: calc(50% - 100px);
     cursor: pointer;
     box-shadow: 1px 1px 10px white;
+    position: relative;
+    opacity: 0;
 
     img {
-      height: inherit;
+      display: block;
       width: 100%;
-      object-position: center;
+      height: 300px;
       object-fit: cover;
     }
   }
 }
 
-@media only screen and (min-width: 1500px) {
-  .container {
-    padding: 100px 10% !important;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1080px) {
+@media (min-width: 768px) and (max-width: 1100px) {
   .container {
     padding: 100px 5%;
   }
 
   button {
     font-size: 16px;
-    width: 120px !important;
   }
+
   .project {
-    max-width: 320px !important;
-    max-height: 300px !important;
-    margin: 20px !important;
+    margin: 20px 10px !important;
+    width: calc(50% - 40px) !important;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  .container {
+    padding: 100px 5%;
+
+    .button-opt {
+      margin-top: 30px;
+      margin-bottom: 0px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      button {
+        margin-top: unset;
+        margin-bottom: 5px !important;
+      }
+    }
+
+    .project {
+      width: 100%;
+    }
   }
 }

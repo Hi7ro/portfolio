@@ -1,18 +1,15 @@
 header {
-  position: relative;
-  background-color: black;
   height: 90vh;
-  padding-left: 15%;
-  padding-right: 15%;
-
+  width: 100vw;
+  background-color: black;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  padding: 100px 15%;
+  display: relative;
   .headline {
-    padding-top: 100px;
-    padding-bottom: 100px;
     color: white;
     font-size: 2.4rem;
     display: flex;
     flex-direction: column;
-    margin-bottom: 15rem;
 
     h2 {
       border-left: 3px solid var(--primary);
@@ -39,7 +36,7 @@ header {
   border-right: 0.1em solid var(--primary);
   white-space: nowrap;
   animation: typing 1s steps(20, end) forwards, blink 0.8s infinite;
-  font-size: 2.5rem;
+  font-size: 50px;
   width: 0;
 }
 
@@ -68,29 +65,21 @@ header {
   }
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-}
-
-.arrow-down {
-  height: 50px;
-}
-
 @media only screen and (max-width: 1500px) {
   header {
     padding-left: 10%;
     padding-right: 10%;
-    .headline {
-      margin-bottom: 7rem !important;
-    }
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media (min-width: 768px) and (max-width: 1100px) {
   header {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    .headline {
+      margin-bottom: 150px;
+    }
 
     .container {
       flex-direction: column-reverse;
@@ -112,5 +101,98 @@ header {
         width: 200px;
       }
     }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1100px) and (orientation: landscape) {
+  .arrow-down {
+    display: none;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    img {
+      height: 200px !important;
+      width: 200px;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+    .typed-out {
+      font-size: 25px;
+    }
+  }
+
+  .headbox {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headline {
+    margin-bottom: 100px !important;
+  }
+
+  .arrow-down {
+    display: none;
+  }
+}
+
+/************************/
+.center {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  right: 45%;
+
+  &:hover {
+    filter: brightness();
+  }
+}
+.arrow-down {
+  transform: translate(-50%, -50%);
+
+  p {
+    margin: 0 0 20px;
+  }
+}
+
+/* Arrow & Hover Animation */
+#more-arrows {
+  width: 75px;
+  height: 65px;
+
+  &:hover {
+    polygon {
+      fill: #fff;
+      transition: all 0.2s ease-out;
+
+      &.arrow-bottom {
+        transform: translateY(-18px);
+      }
+
+      &.arrow-top {
+        transform: translateY(18px);
+      }
+    }
+  }
+}
+
+polygon {
+  fill: #fff;
+  transition: all 0.2s ease-out;
+
+  &.arrow-middle {
+    opacity: 0.75;
+  }
+
+  &.arrow-top {
+    opacity: 0.5;
   }
 }
