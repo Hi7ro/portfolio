@@ -2,78 +2,16 @@
   <h2 data-aos="fade-down" data-aos-duration="1000">MY Work</h2>
   <div class="content" data-aos="fade-down" data-aos-duration="1000">
     <div class="button-opt" data-aos="fade-in" data-aos-duration="500">
-      <button class="active">All</button>
-      <button class="">HTML/CSS</button>
-      <button class="">Angular</button>
-      <button class="">JavaScript</button>
+      <button *ngFor="let type of types;let i = index;" [class.active]="type.active" (click)="activate(i)">
+        {{ type.name }}</button>
+
     </div>
 
-    <div class="my-work">
-      <div class="project" data-aos="zoom-in" data-aos-duration="1000">
-        <img src="../../assets/img/portfo.png">
-        <div class="overlay">
-          <h3>Portfolio</h3>
-          <p>Angular Based Website</p>
-          <a href="http://www.adderlynwindsor.com" target="_blank">Try out</a>
-        </div>
-      </div>
-      <div class="project" data-aos="zoom-in" data-aos-duration="1000">
-        <img src="../../assets/img/project2.png">
-        <div class="overlay">
-          <h3>Portfolio</h3>
-          <p>Angular Based Website</p>
-          <a href="#" target="_blank">Try out</a>
-        </div>
-      </div>
-      <div class="project" data-aos="zoom-in" data-aos-duration="1000">
-        <img src="../../assets/img/project3.png">
-        <div class="overlay">
-          <h3>Portfolio</h3>
-          <p>Angular Based Website</p>
-          <a href="#" target="_blank">Try out</a>
-        </div>
-      </div>
-      <div class="project" data-aos="zoom-in" data-aos-duration="1000">
-        <img src="../../assets/img/project1.png">
-        <div class="overlay">
-          <h3>Portfolio</h3>
-          <p>Angular Based Website</p>
-          <a href="#" target="_blank">Try out</a>
-        </div>
-      </div>
-      <div class="project" data-aos="zoom-in" data-aos-duration="1000">
-        <img src="../../assets/img/project2.png">
-        <div class="overlay">
-          <h3>Portfolio</h3>
-          <p>Angular Based Website</p>
-          <a href="#" target="_blank">Try out</a>
-        </div>
-      </div>
-      <div class="project" data-aos="zoom-in" data-aos-duration="1000">
-        <img src="../../assets/img/project2.png">
-        <div class="overlay">
-          <h3>Portfolio</h3>
-          <p>Angular Based Website</p>
-          <a href="#" target="_blank">Try out</a>
-        </div>
-      </div>
-      <div class="project" data-aos="zoom-in" data-aos-duration="1000">
-        <img src="../../assets/img/project1.png">
-        <div class="overlay">
-          <h3>Portfolio</h3>
-          <p>Angular Based Website</p>
-          <a href="#" target="_blank">Try out</a>
-        </div>
-      </div>
-      <div class="project" data-aos="zoom-in" data-aos-duration="1000">
-        <img src="../../assets/img/project3.png">
-        <div class="overlay">
-          <h3>Portfolio</h3>
-          <p>Angular Based Website</p>
-          <a href="#" target="_blank">Try out</a>
-        </div>
-      </div>
+    <div class="projects">
+      <ng-container *ngFor="let project of projects;let i=index">
+        <app-projects data-aos="fade-in" data-aos-offset="100" *ngIf="meetsSearchCriteria(i)" [project]="project">
+        </app-projects>
+      </ng-container>
     </div>
-
   </div>
 </div>

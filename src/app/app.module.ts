@@ -13,9 +13,10 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, SkillzComponent, WorkComponent, AboutComponent, ContactComponent, FooterComponent, ImprintComponent, DataProtectionComponent, NavbarComponent, HomeComponent],
+  declarations: [AppComponent, HeaderComponent, SkillzComponent, WorkComponent, AboutComponent, ContactComponent, FooterComponent, ImprintComponent, DataProtectionComponent, NavbarComponent, HomeComponent, ProjectsComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

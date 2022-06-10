@@ -2,8 +2,8 @@
   <div class="nav-brand">
     <img routerLink="/" src="../assets/img/LogoMakr-white.png">
   </div>
-  <img class="collapse nav-bar" src="../assets/img/menu.png">
-  <div class="nav-links">
+  <img class="collapse nav-bar" (click)="openSidebar()" src="../assets/img/menu.png">
+  <div class="nav-links d-none" id="mobile">
     <a routerLink="" routerLinkActive="active-link">Home</a>
     <a href="#about" routerLinkActive="active-link">About</a>
     <a href="#work" routerLinkActive="active-link">Portfolio</a>

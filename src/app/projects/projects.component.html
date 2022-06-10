@@ -1,0 +1,23 @@
+<!--
+  <div class="project" (mouseover)="hover=true" (mouseleave)="hover=false">
+    <img src="assets/img/{{ project.img }}" alt="{{ project.name }}">
+    <div class="project-info" *ngIf="hover">
+      <div>
+        <h3 class="title">{{ project.name }}</h3>
+        <p class="description-desktop">{{ project.description1 }}</p>
+        <p class="description-desktop">{{ project.description2 }}</p>
+        <p class="description-mobile">{{ project.description_short }}</p>
+      </div>
+      <button  class="btn-primary">Try</button>
+    </div>
+  </div>
+-->
+
+<div class="project" (mouseover)="hover=true" (mouseleave)="hover=false" data-aos="zoom-in" data-aos-duration="1000">
+  <img src="../../assets/img/{{ project.img }}">
+  <div *ngIf="hover" class="overlay">
+    <h3>{{ project.name }}</h3>
+    <p>{{ project.description }}</p>
+    <a (click)="openLink(project.path)">Try</a>
+  </div>
+</div>
