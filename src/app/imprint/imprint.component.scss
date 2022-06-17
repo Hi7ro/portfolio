@@ -4,16 +4,18 @@
   align-items: center;
   margin-top: 5rem;
   color: #6b6b6b;
+  font-family: "Quicksand", sans-serif;
   height: 65vh;
 }
 
 h1 {
-  font-family: "Quicksand", sans-serif;
   margin-bottom: 30px;
 }
-
+h2 {
+  margin-bottom: 20px;
+}
 h3 {
-  font-family: "Quicksand", sans-serif;
+  margin-bottom: 10px;
 }
 
 p:first-of-type {
@@ -21,10 +23,6 @@ p:first-of-type {
 }
 p {
   text-align: center;
-  font-family: "Quicksand", sans-serif;
   font-size: 1em;
   margin-bottom: 15px;
-}
-a {
-  font-family: "Quicksand", sans-serif;
 }

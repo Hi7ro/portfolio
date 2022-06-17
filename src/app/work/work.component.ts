@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class WorkComponent implements OnInit {
   public types = [
     { name: 'All', active: true },
-    { name: 'HTML/CSS', active: false },
     { name: 'JavaScript', active: false },
     { name: 'Angular', active: false },
   ];
@@ -16,17 +15,17 @@ export class WorkComponent implements OnInit {
   public projects = [
     {
       name: 'Fotogallery',
-      type: 'HTML/CSS',
-      img: 'Fotogallerie.png',
-      description: 'A simple Website based on HTML/CSS and a little JS',
-      path: 'http://ringoffire.adderlynwindsor.com',
+      type: 'JavaScript',
+      img: 'fotogalerie.jpg',
+      description: 'Simple Fotogallery/Pexels Clone based on JavaScript',
+      path: 'http://fotogalerie.adderlynwindsor.com',
     },
     {
       name: 'Ring of Fire',
       type: 'Angular',
       img: 'ringoffire.jpg',
       description:
-        'The pupular drinking game as multi-user-app based on Angular',
+        'The popular drinking game as multi-user-app based on Angular',
       path: 'http://ringoffire.adderlynwindsor.com',
     },
     {
@@ -46,7 +45,7 @@ export class WorkComponent implements OnInit {
     {
       name: 'Pokedex',
       type: 'JavaScript',
-      img: 'Fotogallerie.png',
+      img: 'pokedex.jpg',
       description: 'JS-App, using Pokémon API',
       path: 'http://pokedex.adderlynwindsor.com',
     },
